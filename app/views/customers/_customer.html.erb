@@ -1,0 +1,30 @@
+<div class="customer">
+  <p class="topNav"><%= link_to 'Edit', edit_customer_path(customer) %> <%= link_to 'X', customer, method: :delete, data: {confirm: 'Are you sure you want to delete?'} %></p>
+  <h2>
+    <%= customer.fullname %>
+  </h2>
+  
+  <% if customer.imagefilename.present? %>
+    <%= image_tag customer.imagefilename %>  
+  <% end %>
+  
+  <p>
+    <strong>Phone:</strong>
+    <%= customer.phone %>
+  </p>
+  
+  <% if customer.email.present? %>
+    <p>
+      <strong>Email:</strong>
+      <%= mail_to(customer.email) %>
+    </p>
+  <% end %>
+  
+  
+  <% if customer.notes.present? %>
+    <p>
+      <strong>Notes:</strong>
+      <%= customer.notes %>
+    </p>
+  <% end %>
+</div>

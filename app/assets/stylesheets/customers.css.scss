@@ -1,0 +1,22 @@
+// Place all the styles related to the customers controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+div {
+    width: 250px;
+    height: 400px;
+    border: 1px solid black;
+    box-shadow: 5px 5px 5px #888888;
+    padding: 15px;
+    margin: 10px;
+    background-color: #FFFFFF;
+    float: left;
+}
+
+.clear {
+    clear: both;
+}
+
+.topNav {
+    text-align: right;
+}
